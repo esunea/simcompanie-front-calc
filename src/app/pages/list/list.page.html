@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="ht()">BenefHT</ion-button>
+  <ion-button (click)="contract()">Contract</ion-button>
+  <ion-button (click)="market()">Market</ion-button>
+  <ion-button (click)="bestRoi()">bestRoi</ion-button>
+  
+  
+  <div *ngFor="let elem of list">
+    <ion-item (click)="goToDetails(elem)">
+      <p>{{elem.name}} : {{elem.value}}</p>
+    </ion-item>
+  </div>
+</ion-content>
