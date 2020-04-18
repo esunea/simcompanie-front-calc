@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { EncycloService } from './encyclo/encyclo.service';
+import { EncycloService } from '../encyclo/encyclo.service';
 
 @Injectable({
   providedIn: 'root'
