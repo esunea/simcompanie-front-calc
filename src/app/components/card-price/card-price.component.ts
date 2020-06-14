@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CalculatorService } from 'src/app/services/calculator.service';
+import { CalculatorService } from 'src/app/services/calc/calculator.service';
 
 @Component({
   selector: 'app-card-price',

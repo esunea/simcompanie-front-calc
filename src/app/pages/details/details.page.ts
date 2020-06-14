@@ -7,11 +7,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./details.page.scss'],
 })
 export class DetailsPage implements OnInit {
-  private id=1
+   id=1
   constructor(private activeRoute: ActivatedRoute) { }
-  
+
   ngOnInit() {
-    
+
     this.activeRoute.params.subscribe((res) => {
       console.log(res)
       if (res) {
@@ -19,7 +19,7 @@ export class DetailsPage implements OnInit {
         this.id = res.id
       }
     });
-    
+
   }
-  
+
 }

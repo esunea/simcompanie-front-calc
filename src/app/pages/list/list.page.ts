@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { EncycloService } from 'src/app/services/encyclo/encyclo.service';
-import { CalculatorService } from 'src/app/services/calculator.service';
+import { CalculatorService } from 'src/app/services/calc/calculator.service';
 
 
 @Component({

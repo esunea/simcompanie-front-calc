@@ -4,18 +4,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EncycloService {
-  public prices :any; 
-  public crafts :any; 
-  public buildings :any; 
+  public prices :any;
+  public crafts :any;
+  public buildings :any;
   public transportID : number = 13
   public names:any
-  constructor() { 
+  constructor() {
     this.prices = this.price()
     this.crafts = this.craft()
     this.buildings = this.building()
     this.names = this.name()
   }
-  
+
   getBuilding(id){
     return this.buildings.filter(x=>{return x.id == id})[0]
   }
@@ -28,7 +28,7 @@ export class EncycloService {
   getKindName(kind){
     return this.names[kind]
   }
-  
+
   name(){
     return [
       null,
@@ -147,10 +147,10 @@ export class EncycloService {
       "materials-research"
     ]
   }
-  
-  
+
+
   craft(){
-    
+
     return [
       {
         "name": "Power",
@@ -2107,7 +2107,7 @@ export class EncycloService {
         "intrants": []
       },
     ]
-    
+
   }
   //******************** Buildings *******************************************************************/
   building(){
@@ -2314,8 +2314,8 @@ export class EncycloService {
       }
     ]
   }
-  
-  
+
+
   building_data(){
     return [
       {
@@ -5395,715 +5395,715 @@ export class EncycloService {
       }
     ]
   }
-  
-  
+
+
   ////*****PRIX ICI  */
-  
-  
+
+
   price(){
-    
+
     return [
       {
-        "kind": 111,
-        "image": "images/resources/construction-units.png",
-        "price": 2970.0,
-        "is_up": false,
-        "url": "/market/resource/111"
+          "kind": 21,
+          "image": "images/resources/electronic-components.png",
+          "price": 56.0,
+          "is_up": false,
+          "url": "/market/resource/21"
       },
       {
-        "kind": 1,
-        "image": "images/resources/power.png",
-        "price": 0.265,
-        "is_up": false,
-        "url": "/market/resource/1"
+          "kind": 18,
+          "image": "images/resources/aluminium.png",
+          "price": 18.4,
+          "is_up": false,
+          "url": "/market/resource/18"
       },
       {
-        "kind": 32,
-        "image": "images/resources/electronics-research.png",
-        "price": 354.0,
-        "is_up": false,
-        "url": "/market/resource/32"
+          "kind": 111,
+          "image": "images/resources/construction-units.png",
+          "price": 2690.0,
+          "is_up": false,
+          "url": "/market/resource/111"
       },
       {
-        "kind": 106,
-        "image": "images/resources/wood.png",
-        "price": 3.3,
-        "is_up": false,
-        "url": "/market/resource/106"
+          "kind": 83,
+          "image": "images/resources/rocket-fuel.png",
+          "price": 29.0,
+          "is_up": false,
+          "url": "/market/resource/83"
       },
       {
-        "kind": 29,
-        "image": "images/resources/plant-research.png",
-        "price": 204.0,
-        "is_up": false,
-        "url": "/market/resource/29"
+          "kind": 2,
+          "image": "images/resources/water.png",
+          "price": 0.301,
+          "is_up": true,
+          "url": "/market/resource/2"
       },
       {
-        "kind": 26,
-        "image": "images/resources/laptops.png",
-        "price": 1200.0,
-        "is_up": false,
-        "url": "/market/resource/26"
+          "kind": 13,
+          "image": "images/resources/transport.png",
+          "price": 0.346,
+          "is_up": false,
+          "url": "/market/resource/13"
       },
       {
-        "kind": 18,
-        "image": "images/resources/aluminium.png",
-        "price": 20.0,
-        "is_up": false,
-        "url": "/market/resource/18"
+          "kind": 55,
+          "image": "images/resources/economy-car.png",
+          "price": 2250.0,
+          "is_up": true,
+          "url": "/market/resource/55"
       },
       {
-        "kind": 110,
-        "image": "images/resources/tools.png",
-        "price": 216.0,
-        "is_up": false,
-        "url": "/market/resource/110"
+          "kind": 35,
+          "image": "images/resources/software.png",
+          "price": 143.0,
+          "is_up": false,
+          "url": "/market/resource/35"
       },
       {
-        "kind": 101,
-        "image": "images/resources/reinforced-concrete.png",
-        "price": 232.0,
-        "is_up": false,
-        "url": "/market/resource/101"
+          "kind": 66,
+          "image": "images/resources/seeds.png",
+          "price": 0.189,
+          "is_up": true,
+          "url": "/market/resource/66"
       },
       {
-        "kind": 19,
-        "image": "images/resources/plastic.png",
-        "price": 12.9,
-        "is_up": true,
-        "url": "/market/resource/19"
+          "kind": 75,
+          "image": "images/resources/carbon-fiber.png",
+          "price": 6.9,
+          "is_up": false,
+          "url": "/market/resource/75"
       },
       {
-        "kind": 72,
-        "image": "images/resources/sugarcane.png",
-        "price": 1.42,
-        "is_up": true,
-        "url": "/market/resource/72"
+          "kind": 61,
+          "image": "images/resources/gloves.png",
+          "price": 10.3,
+          "is_up": true,
+          "url": "/market/resource/61"
       },
       {
-        "kind": 105,
-        "image": "images/resources/limestone.png",
-        "price": 1.8,
-        "is_up": true,
-        "url": "/market/resource/105"
+          "kind": 76,
+          "image": "images/resources/carbon-composite.png",
+          "price": 63.0,
+          "is_up": true,
+          "url": "/market/resource/76"
       },
       {
-        "kind": 52,
-        "image": "images/resources/combustion-engine.png",
-        "price": 630.0,
-        "is_up": false,
-        "url": "/market/resource/52"
+          "kind": 1,
+          "image": "images/resources/power.png",
+          "price": 0.243,
+          "is_up": false,
+          "url": "/market/resource/1"
       },
       {
-        "kind": 107,
-        "image": "images/resources/steel-beams.png",
-        "price": 22.25,
-        "is_up": false,
-        "url": "/market/resource/107"
+          "kind": 51,
+          "image": "images/resources/car-body.png",
+          "price": 750.0,
+          "is_up": false,
+          "url": "/market/resource/51"
       },
       {
-        "kind": 69,
-        "image": "images/resources/golden-bars.png",
-        "price": 6250.0,
-        "is_up": false,
-        "url": "/market/resource/69"
+          "kind": 29,
+          "image": "images/resources/plant-research.png",
+          "price": 162.0,
+          "is_up": false,
+          "url": "/market/resource/29"
       },
       {
-        "kind": 73,
-        "image": "images/resources/ethanol.png",
-        "price": 22.5,
-        "is_up": true,
-        "url": "/market/resource/73"
+          "kind": 8,
+          "image": "images/resources/sausages.png",
+          "price": 3.45,
+          "is_up": false,
+          "url": "/market/resource/8"
       },
       {
-        "kind": 16,
-        "image": "images/resources/silicon.png",
-        "price": 8.3,
-        "is_up": true,
-        "url": "/market/resource/16"
+          "kind": 102,
+          "image": "images/resources/bricks.png",
+          "price": 2.65,
+          "is_up": true,
+          "url": "/market/resource/102"
       },
       {
-        "kind": 7,
-        "image": "images/resources/steak.png",
-        "price": 11.4,
-        "is_up": false,
-        "url": "/market/resource/7"
+          "kind": 34,
+          "image": "images/resources/chemistry-research.png",
+          "price": 169.0,
+          "is_up": false,
+          "url": "/market/resource/34"
       },
       {
-        "kind": 12,
-        "image": "images/resources/diesel.png",
-        "price": 41.0,
-        "is_up": true,
-        "url": "/market/resource/12"
+          "kind": 14,
+          "image": "images/resources/minerals.png",
+          "price": 10.9,
+          "is_up": false,
+          "url": "/market/resource/14"
       },
       {
-        "kind": 2,
-        "image": "images/resources/water.png",
-        "price": 0.325,
-        "is_up": false,
-        "url": "/market/resource/2"
+          "kind": 43,
+          "image": "images/resources/steel.png",
+          "price": 11.2,
+          "is_up": true,
+          "url": "/market/resource/43"
       },
       {
-        "kind": 40,
-        "image": "images/resources/cotton.png",
-        "price": 1.16,
-        "is_up": true,
-        "url": "/market/resource/40"
+          "kind": 107,
+          "image": "images/resources/steel-beams.png",
+          "price": 21.25,
+          "is_up": false,
+          "url": "/market/resource/107"
       },
       {
-        "kind": 15,
-        "image": "images/resources/bauxite.png",
-        "price": 10.5,
-        "is_up": false,
-        "url": "/market/resource/15"
+          "kind": 109,
+          "image": "images/resources/windows.png",
+          "price": 97.0,
+          "is_up": true,
+          "url": "/market/resource/109"
       },
       {
-        "kind": 13,
-        "image": "images/resources/transport.png",
-        "price": 0.39,
-        "is_up": false,
-        "url": "/market/resource/13"
+          "kind": 20,
+          "image": "images/resources/processors.png",
+          "price": 126.0,
+          "is_up": false,
+          "url": "/market/resource/20"
       },
       {
-        "kind": 10,
-        "image": "images/resources/crude-oil.png",
-        "price": 33.5,
-        "is_up": true,
-        "url": "/market/resource/10"
+          "kind": 19,
+          "image": "images/resources/plastic.png",
+          "price": 11.3,
+          "is_up": false,
+          "url": "/market/resource/19"
       },
       {
-        "kind": 75,
-        "image": "images/resources/carbon-fiber.png",
-        "price": 7.7,
-        "is_up": true,
-        "url": "/market/resource/75"
+          "kind": 79,
+          "image": "images/resources/high-grade-e-components.png",
+          "price": 905.0,
+          "is_up": true,
+          "url": "/market/resource/79"
       },
       {
-        "kind": 17,
-        "image": "images/resources/chemicals.png",
-        "price": 15.4,
-        "is_up": false,
-        "url": "/market/resource/17"
+          "kind": 44,
+          "image": "images/resources/sand.png",
+          "price": 1.15,
+          "is_up": true,
+          "url": "/market/resource/44"
       },
       {
-        "kind": 4,
-        "image": "images/resources/oranges.png",
-        "price": 1.97,
-        "is_up": false,
-        "url": "/market/resource/4"
+          "kind": 100,
+          "image": "images/resources/aero-research.png",
+          "price": 300.0,
+          "is_up": false,
+          "url": "/market/resource/100"
       },
       {
-        "kind": 45,
-        "image": "images/resources/glass.png",
-        "price": 13.7,
-        "is_up": false,
-        "url": "/market/resource/45"
+          "kind": 106,
+          "image": "images/resources/wood.png",
+          "price": 3.0,
+          "is_up": false,
+          "url": "/market/resource/106"
       },
       {
-        "kind": 14,
-        "image": "images/resources/minerals.png",
-        "price": 12.2,
-        "is_up": false,
-        "url": "/market/resource/14"
+          "kind": 12,
+          "image": "images/resources/diesel.png",
+          "price": 40.0,
+          "is_up": true,
+          "url": "/market/resource/12"
       },
       {
-        "kind": 108,
-        "image": "images/resources/planks.png",
-        "price": 10.4,
-        "is_up": true,
-        "url": "/market/resource/108"
+          "kind": 77,
+          "image": "images/resources/fuselage.png",
+          "price": 2780.0,
+          "is_up": true,
+          "url": "/market/resource/77"
       },
       {
-        "kind": 43,
-        "image": "images/resources/steel.png",
-        "price": 12.0,
-        "is_up": false,
-        "url": "/market/resource/43"
+          "kind": 108,
+          "image": "images/resources/planks.png",
+          "price": 9.6,
+          "is_up": true,
+          "url": "/market/resource/108"
       },
       {
-        "kind": 60,
-        "image": "images/resources/underwear.png",
-        "price": 4.35,
-        "is_up": true,
-        "url": "/market/resource/60"
+          "kind": 73,
+          "image": "images/resources/ethanol.png",
+          "price": 23.0,
+          "is_up": true,
+          "url": "/market/resource/73"
       },
       {
-        "kind": 9,
-        "image": "images/resources/eggs.png",
-        "price": 1.17,
-        "is_up": true,
-        "url": "/market/resource/9"
+          "kind": 9,
+          "image": "images/resources/eggs.png",
+          "price": 1.04,
+          "is_up": false,
+          "url": "/market/resource/9"
       },
       {
-        "kind": 35,
-        "image": "images/resources/software.png",
-        "price": 206.0,
-        "is_up": false,
-        "url": "/market/resource/35"
+          "kind": 46,
+          "image": "images/resources/leather.png",
+          "price": 13.7,
+          "is_up": false,
+          "url": "/market/resource/46"
       },
       {
-        "kind": 68,
-        "image": "images/resources/gold-ore.png",
-        "price": 30.0,
-        "is_up": false,
-        "url": "/market/resource/68"
+          "kind": 31,
+          "image": "images/resources/mining-research.png",
+          "price": 316.0,
+          "is_up": false,
+          "url": "/market/resource/31"
       },
       {
-        "kind": 74,
-        "image": "images/resources/methane.png",
-        "price": 19.4,
-        "is_up": false,
-        "url": "/market/resource/74"
+          "kind": 52,
+          "image": "images/resources/combustion-engine.png",
+          "price": 620.0,
+          "is_up": true,
+          "url": "/market/resource/52"
       },
       {
-        "kind": 109,
-        "image": "images/resources/windows.png",
-        "price": 126.0,
-        "is_up": true,
-        "url": "/market/resource/109"
+          "kind": 33,
+          "image": "images/resources/breeding-research.png",
+          "price": 210.0,
+          "is_up": false,
+          "url": "/market/resource/33"
       },
       {
-        "kind": 3,
-        "image": "images/resources/apples.png",
-        "price": 2.0,
-        "is_up": false,
-        "url": "/market/resource/3"
+          "kind": 113,
+          "image": "images/resources/materials-research.png",
+          "price": 224.0,
+          "is_up": true,
+          "url": "/market/resource/113"
       },
       {
-        "kind": 21,
-        "image": "images/resources/electronic-components.png",
-        "price": 63.0,
-        "is_up": false,
-        "url": "/market/resource/21"
+          "kind": 3,
+          "image": "images/resources/apples.png",
+          "price": 1.78,
+          "is_up": false,
+          "url": "/market/resource/3"
       },
       {
-        "kind": 48,
-        "image": "images/resources/electric-motor.png",
-        "price": 238.0,
-        "is_up": true,
-        "url": "/market/resource/48"
+          "kind": 22,
+          "image": "images/resources/batteries.png",
+          "price": 84.0,
+          "is_up": false,
+          "url": "/market/resource/22"
       },
       {
-        "kind": 5,
-        "image": "images/resources/grapes.png",
-        "price": 2.3,
-        "is_up": true,
-        "url": "/market/resource/5"
+          "kind": 30,
+          "image": "images/resources/energy-research.png",
+          "price": 280.0,
+          "is_up": false,
+          "url": "/market/resource/30"
       },
       {
-        "kind": 44,
-        "image": "images/resources/sand.png",
-        "price": 1.3,
-        "is_up": false,
-        "url": "/market/resource/44"
+          "kind": 69,
+          "image": "images/resources/golden-bars.png",
+          "price": 5900.0,
+          "is_up": false,
+          "url": "/market/resource/69"
       },
       {
-        "kind": 76,
-        "image": "images/resources/carbon-composite.png",
-        "price": 70.0,
-        "is_up": false,
-        "url": "/market/resource/76"
+          "kind": 59,
+          "image": "images/resources/fashion-research.png",
+          "price": 105.0,
+          "is_up": false,
+          "url": "/market/resource/59"
       },
       {
-        "kind": 31,
-        "image": "images/resources/mining-research.png",
-        "price": 390.0,
-        "is_up": true,
-        "url": "/market/resource/31"
+          "kind": 58,
+          "image": "images/resources/automotive-research.png",
+          "price": 216.0,
+          "is_up": false,
+          "url": "/market/resource/58"
       },
       {
-        "kind": 77,
-        "image": "images/resources/fuselage.png",
-        "price": 3200.0,
-        "is_up": false,
-        "url": "/market/resource/77"
+          "kind": 63,
+          "image": "images/resources/simmi-shoes.png",
+          "price": 18.6,
+          "is_up": true,
+          "url": "/market/resource/63"
       },
       {
-        "kind": 46,
-        "image": "images/resources/leather.png",
-        "price": 13.0,
-        "is_up": false,
-        "url": "/market/resource/46"
+          "kind": 32,
+          "image": "images/resources/electronics-research.png",
+          "price": 418.0,
+          "is_up": false,
+          "url": "/market/resource/32"
       },
       {
-        "kind": 66,
-        "image": "images/resources/seeds.png",
-        "price": 0.2,
-        "is_up": true,
-        "url": "/market/resource/66"
+          "kind": 41,
+          "image": "images/resources/fabric.png",
+          "price": 3.6,
+          "is_up": false,
+          "url": "/market/resource/41"
       },
       {
-        "kind": 83,
-        "image": "images/resources/rocket-fuel.png",
-        "price": 32.75,
-        "is_up": false,
-        "url": "/market/resource/83"
+          "kind": 16,
+          "image": "images/resources/silicon.png",
+          "price": 7.8,
+          "is_up": false,
+          "url": "/market/resource/16"
       },
       {
-        "kind": 6,
-        "image": "images/resources/grain.png",
-        "price": 0.56,
-        "is_up": true,
-        "url": "/market/resource/6"
+          "kind": 45,
+          "image": "images/resources/glass.png",
+          "price": 14.1,
+          "is_up": false,
+          "url": "/market/resource/45"
       },
       {
-        "kind": 63,
-        "image": "images/resources/simmi-shoes.png",
-        "price": 19.0,
-        "is_up": false,
-        "url": "/market/resource/63"
+          "kind": 72,
+          "image": "images/resources/sugarcane.png",
+          "price": 1.34,
+          "is_up": false,
+          "url": "/market/resource/72"
       },
       {
-        "kind": 34,
-        "image": "images/resources/chemistry-research.png",
-        "price": 210.0,
-        "is_up": true,
-        "url": "/market/resource/34"
+          "kind": 110,
+          "image": "images/resources/tools.png",
+          "price": 189.0,
+          "is_up": true,
+          "url": "/market/resource/110"
       },
       {
-        "kind": 54,
-        "image": "images/resources/luxury-e-car.png",
-        "price": 6900.0,
-        "is_up": true,
-        "url": "/market/resource/54"
+          "kind": 65,
+          "image": "images/resources/sneakers.png",
+          "price": 13.7,
+          "is_up": true,
+          "url": "/market/resource/65"
       },
       {
-        "kind": 100,
-        "image": "images/resources/aero-research.png",
-        "price": 350.0,
-        "is_up": false,
-        "url": "/market/resource/100"
+          "kind": 10,
+          "image": "images/resources/crude-oil.png",
+          "price": 29.5,
+          "is_up": true,
+          "url": "/market/resource/10"
       },
       {
-        "kind": 79,
-        "image": "images/resources/high-grade-e-components.png",
-        "price": 940.0,
-        "is_up": true,
-        "url": "/market/resource/79"
+          "kind": 17,
+          "image": "images/resources/chemicals.png",
+          "price": 14.0,
+          "is_up": true,
+          "url": "/market/resource/17"
       },
       {
-        "kind": 41,
-        "image": "images/resources/fabric.png",
-        "price": 3.85,
-        "is_up": true,
-        "url": "/market/resource/41"
+          "kind": 78,
+          "image": "images/resources/wing.png",
+          "price": 2150.0,
+          "is_up": true,
+          "url": "/market/resource/78"
       },
       {
-        "kind": 103,
-        "image": "images/resources/cement.png",
-        "price": 7.7,
-        "is_up": false,
-        "url": "/market/resource/103"
+          "kind": 11,
+          "image": "images/resources/petrol.png",
+          "price": 40.0,
+          "is_up": false,
+          "url": "/market/resource/11"
       },
       {
-        "kind": 102,
-        "image": "images/resources/bricks.png",
-        "price": 2.8,
-        "is_up": true,
-        "url": "/market/resource/102"
+          "kind": 68,
+          "image": "images/resources/gold-ore.png",
+          "price": 29.5,
+          "is_up": true,
+          "url": "/market/resource/68"
       },
       {
-        "kind": 89,
-        "image": "images/resources/jet-engine.png",
-        "price": 5300.0,
-        "is_up": true,
-        "url": "/market/resource/89"
+          "kind": 23,
+          "image": "images/resources/displays.png",
+          "price": 117.0,
+          "is_up": false,
+          "url": "/market/resource/23"
       },
       {
-        "kind": 78,
-        "image": "images/resources/wing.png",
-        "price": 2430.0,
-        "is_up": true,
-        "url": "/market/resource/78"
+          "kind": 101,
+          "image": "images/resources/reinforced-concrete.png",
+          "price": 174.0,
+          "is_up": false,
+          "url": "/market/resource/101"
       },
       {
-        "kind": 8,
-        "image": "images/resources/sausages.png",
-        "price": 3.55,
-        "is_up": true,
-        "url": "/market/resource/8"
+          "kind": 87,
+          "image": "images/resources/heat-shield.png",
+          "price": 402.0,
+          "is_up": false,
+          "url": "/market/resource/87"
       },
       {
-        "kind": 22,
-        "image": "images/resources/batteries.png",
-        "price": 94.0,
-        "is_up": true,
-        "url": "/market/resource/22"
+          "kind": 48,
+          "image": "images/resources/electric-motor.png",
+          "price": 220.0,
+          "is_up": false,
+          "url": "/market/resource/48"
       },
       {
-        "kind": 42,
-        "image": "images/resources/iron-ore.png",
-        "price": 5.6,
-        "is_up": true,
-        "url": "/market/resource/42"
+          "kind": 6,
+          "image": "images/resources/grain.png",
+          "price": 0.495,
+          "is_up": false,
+          "url": "/market/resource/6"
       },
       {
-        "kind": 59,
-        "image": "images/resources/fashion-research.png",
-        "price": 120.0,
-        "is_up": true,
-        "url": "/market/resource/59"
+          "kind": 53,
+          "image": "images/resources/economy-e-car.png",
+          "price": 3300.0,
+          "is_up": false,
+          "url": "/market/resource/53"
       },
       {
-        "kind": 56,
-        "image": "images/resources/luxury-car.png",
-        "price": 4350.0,
-        "is_up": false,
-        "url": "/market/resource/56"
+          "kind": 7,
+          "image": "images/resources/steak.png",
+          "price": 11.7,
+          "is_up": true,
+          "url": "/market/resource/7"
       },
       {
-        "kind": 55,
-        "image": "images/resources/economy-car.png",
-        "price": 2200.0,
-        "is_up": false,
-        "url": "/market/resource/55"
+          "kind": 54,
+          "image": "images/resources/luxury-e-car.png",
+          "price": 6400.0,
+          "is_up": false,
+          "url": "/market/resource/54"
       },
       {
-        "kind": 30,
-        "image": "images/resources/energy-research.png",
-        "price": 338.0,
-        "is_up": false,
-        "url": "/market/resource/30"
+          "kind": 15,
+          "image": "images/resources/bauxite.png",
+          "price": 8.4,
+          "is_up": false,
+          "url": "/market/resource/15"
       },
       {
-        "kind": 113,
-        "image": "images/resources/materials-research.png",
-        "price": 252.0,
-        "is_up": false,
-        "url": "/market/resource/113"
+          "kind": 98,
+          "image": "images/resources/quadcopter.png",
+          "price": 905.0,
+          "is_up": false,
+          "url": "/market/resource/98"
       },
       {
-        "kind": 23,
-        "image": "images/resources/displays.png",
-        "price": 122.0,
-        "is_up": false,
-        "url": "/market/resource/23"
+          "kind": 4,
+          "image": "images/resources/oranges.png",
+          "price": 1.79,
+          "is_up": true,
+          "url": "/market/resource/4"
       },
       {
-        "kind": 81,
-        "image": "images/resources/cockpit.png",
-        "price": 5800.0,
-        "is_up": true,
-        "url": "/market/resource/81"
+          "kind": 47,
+          "image": "images/resources/on-board-computer.png",
+          "price": 488.0,
+          "is_up": false,
+          "url": "/market/resource/47"
       },
       {
-        "kind": 104,
-        "image": "images/resources/clay.png",
-        "price": 0.93,
-        "is_up": true,
-        "url": "/market/resource/104"
+          "kind": 103,
+          "image": "images/resources/cement.png",
+          "price": 5.9,
+          "is_up": false,
+          "url": "/market/resource/103"
       },
       {
-        "kind": 86,
-        "image": "images/resources/rocket-engine.png",
-        "price": 12700.0,
-        "is_up": false,
-        "url": "/market/resource/86"
+          "kind": 5,
+          "image": "images/resources/grapes.png",
+          "price": 2.3,
+          "is_up": false,
+          "url": "/market/resource/5"
       },
       {
-        "kind": 112,
-        "image": "images/resources/bulldozer.png",
-        "price": 2360.0,
-        "is_up": true,
-        "url": "/market/resource/112"
+          "kind": 60,
+          "image": "images/resources/underwear.png",
+          "price": 4.5,
+          "is_up": true,
+          "url": "/market/resource/60"
       },
       {
-        "kind": 28,
-        "image": "images/resources/televisions.png",
-        "price": 910.0,
-        "is_up": false,
-        "url": "/market/resource/28"
+          "kind": 25,
+          "image": "images/resources/tablets.png",
+          "price": 795.0,
+          "is_up": true,
+          "url": "/market/resource/25"
       },
       {
-        "kind": 27,
-        "image": "images/resources/monitors.png",
-        "price": 570.0,
-        "is_up": false,
-        "url": "/market/resource/27"
+          "kind": 42,
+          "image": "images/resources/iron-ore.png",
+          "price": 4.4,
+          "is_up": false,
+          "url": "/market/resource/42"
       },
       {
-        "kind": 70,
-        "image": "images/resources/gold-watch.png",
-        "price": 740.0,
-        "is_up": false,
-        "url": "/market/resource/70"
+          "kind": 112,
+          "image": "images/resources/bulldozer.png",
+          "price": 2220.0,
+          "is_up": true,
+          "url": "/market/resource/112"
       },
       {
-        "kind": 11,
-        "image": "images/resources/petrol.png",
-        "price": 41.5,
-        "is_up": true,
-        "url": "/market/resource/11"
+          "kind": 24,
+          "image": "images/resources/smart-phones.png",
+          "price": 600.0,
+          "is_up": true,
+          "url": "/market/resource/24"
       },
       {
-        "kind": 47,
-        "image": "images/resources/on-board-computer.png",
-        "price": 474.0,
-        "is_up": false,
-        "url": "/market/resource/47"
+          "kind": 40,
+          "image": "images/resources/cotton.png",
+          "price": 1.09,
+          "is_up": false,
+          "url": "/market/resource/40"
       },
       {
-        "kind": 84,
-        "image": "images/resources/fuel-tank.png",
-        "price": 9375.0,
-        "is_up": false,
-        "url": "/market/resource/84"
+          "kind": 50,
+          "image": "images/resources/car-interior.png",
+          "price": 314.0,
+          "is_up": false,
+          "url": "/market/resource/50"
       },
       {
-        "kind": 51,
-        "image": "images/resources/car-body.png",
-        "price": 800.0,
-        "is_up": false,
-        "url": "/market/resource/51"
+          "kind": 88,
+          "image": "images/resources/ion-drive.png",
+          "price": 11900.0,
+          "is_up": true,
+          "url": "/market/resource/88"
       },
       {
-        "kind": 20,
-        "image": "images/resources/processors.png",
-        "price": 118.0,
-        "is_up": false,
-        "url": "/market/resource/20"
+          "kind": 27,
+          "image": "images/resources/monitors.png",
+          "price": 580.0,
+          "is_up": false,
+          "url": "/market/resource/27"
       },
       {
-        "kind": 58,
-        "image": "images/resources/automotive-research.png",
-        "price": 268.0,
-        "is_up": true,
-        "url": "/market/resource/58"
+          "kind": 62,
+          "image": "images/resources/dress.png",
+          "price": 18.2,
+          "is_up": false,
+          "url": "/market/resource/62"
       },
       {
-        "kind": 61,
-        "image": "images/resources/gloves.png",
-        "price": 10.1,
-        "is_up": false,
-        "url": "/market/resource/61"
+          "kind": 26,
+          "image": "images/resources/laptops.png",
+          "price": 1250.0,
+          "is_up": true,
+          "url": "/market/resource/26"
       },
       {
-        "kind": 25,
-        "image": "images/resources/tablets.png",
-        "price": 725.0,
-        "is_up": false,
-        "url": "/market/resource/25"
+          "kind": 89,
+          "image": "images/resources/jet-engine.png",
+          "price": 4950.0,
+          "is_up": false,
+          "url": "/market/resource/89"
       },
       {
-        "kind": 64,
-        "image": "images/resources/handbags.png",
-        "price": 24.0,
-        "is_up": false,
-        "url": "/market/resource/64"
+          "kind": 86,
+          "image": "images/resources/rocket-engine.png",
+          "price": 11000.0,
+          "is_up": false,
+          "url": "/market/resource/86"
       },
       {
-        "kind": 49,
-        "image": "images/resources/luxury-car-interior.png",
-        "price": 910.0,
-        "is_up": false,
-        "url": "/market/resource/49"
+          "kind": 28,
+          "image": "images/resources/televisions.png",
+          "price": 950.0,
+          "is_up": true,
+          "url": "/market/resource/28"
       },
       {
-        "kind": 88,
-        "image": "images/resources/ion-drive.png",
-        "price": 12900.0,
-        "is_up": true,
-        "url": "/market/resource/88"
+          "kind": 105,
+          "image": "images/resources/limestone.png",
+          "price": 1.29,
+          "is_up": false,
+          "url": "/market/resource/105"
       },
       {
-        "kind": 62,
-        "image": "images/resources/dress.png",
-        "price": 18.1,
-        "is_up": true,
-        "url": "/market/resource/62"
+          "kind": 81,
+          "image": "images/resources/cockpit.png",
+          "price": 5425.0,
+          "is_up": true,
+          "url": "/market/resource/81"
       },
       {
-        "kind": 53,
-        "image": "images/resources/economy-e-car.png",
-        "price": 3480.0,
-        "is_up": true,
-        "url": "/market/resource/53"
+          "kind": 104,
+          "image": "images/resources/clay.png",
+          "price": 0.7,
+          "is_up": false,
+          "url": "/market/resource/104"
       },
       {
-        "kind": 33,
-        "image": "images/resources/breeding-research.png",
-        "price": 208.0,
-        "is_up": false,
-        "url": "/market/resource/33"
+          "kind": 74,
+          "image": "images/resources/methane.png",
+          "price": 18.6,
+          "is_up": false,
+          "url": "/market/resource/74"
       },
       {
-        "kind": 50,
-        "image": "images/resources/car-interior.png",
-        "price": 328.0,
-        "is_up": true,
-        "url": "/market/resource/50"
+          "kind": 64,
+          "image": "images/resources/handbags.png",
+          "price": 24.75,
+          "is_up": false,
+          "url": "/market/resource/64"
       },
       {
-        "kind": 65,
-        "image": "images/resources/sneakers.png",
-        "price": 14.2,
-        "is_up": true,
-        "url": "/market/resource/65"
+          "kind": 80,
+          "image": "images/resources/flight-computer.png",
+          "price": 5000.0,
+          "is_up": true,
+          "url": "/market/resource/80"
       },
       {
-        "kind": 82,
-        "image": "images/resources/attitude-control.png",
-        "price": 1550.0,
-        "is_up": false,
-        "url": "/market/resource/82"
+          "kind": 82,
+          "image": "images/resources/attitude-control.png",
+          "price": 1500.0,
+          "is_up": true,
+          "url": "/market/resource/82"
       },
       {
-        "kind": 24,
-        "image": "images/resources/smart-phones.png",
-        "price": 625.0,
-        "is_up": true,
-        "url": "/market/resource/24"
+          "kind": 57,
+          "image": "images/resources/truck.png",
+          "price": 5775.0,
+          "is_up": false,
+          "url": "/market/resource/57"
       },
       {
-        "kind": 71,
-        "image": "images/resources/necklace.png",
-        "price": 1520.0,
-        "is_up": true,
-        "url": "/market/resource/71"
+          "kind": 56,
+          "image": "images/resources/luxury-car.png",
+          "price": 4430.0,
+          "is_up": true,
+          "url": "/market/resource/56"
       },
       {
-        "kind": 80,
-        "image": "images/resources/flight-computer.png",
-        "price": 5200.0,
-        "is_up": false,
-        "url": "/market/resource/80"
+          "kind": 85,
+          "image": "images/resources/solid-rocket.png",
+          "price": 6475.0,
+          "is_up": true,
+          "url": "/market/resource/85"
       },
       {
-        "kind": 98,
-        "image": "images/resources/quadcopter.png",
-        "price": 890.0,
-        "is_up": true,
-        "url": "/market/resource/98"
+          "kind": 84,
+          "image": "images/resources/fuel-tank.png",
+          "price": 8300.0,
+          "is_up": false,
+          "url": "/market/resource/84"
       },
       {
-        "kind": 57,
-        "image": "images/resources/truck.png",
-        "price": 5750.0,
-        "is_up": true,
-        "url": "/market/resource/57"
+          "kind": 49,
+          "image": "images/resources/luxury-car-interior.png",
+          "price": 870.0,
+          "is_up": true,
+          "url": "/market/resource/49"
       },
       {
-        "kind": 85,
-        "image": "images/resources/solid-rocket.png",
-        "price": 7800.0,
-        "is_up": true,
-        "url": "/market/resource/85"
+          "kind": 71,
+          "image": "images/resources/necklace.png",
+          "price": 1540.0,
+          "is_up": false,
+          "url": "/market/resource/71"
       },
       {
-        "kind": 87,
-        "image": "images/resources/heat-shield.png",
-        "price": 396.0,
-        "is_up": true,
-        "url": "/market/resource/87"
+          "kind": 67,
+          "image": "images/resources/xmas-crackers.png",
+          "price": 20.0,
+          "is_up": true,
+          "url": "/market/resource/67"
       },
       {
-        "kind": 67,
-        "image": "images/resources/xmas-crackers.png",
-        "price": 16.0,
-        "is_up": true,
-        "url": "/market/resource/67"
+          "kind": 70,
+          "image": "images/resources/gold-watch.png",
+          "price": 750.0,
+          "is_up": true,
+          "url": "/market/resource/70"
       }
-    ]
+  ]
   }
-  
+
 }
